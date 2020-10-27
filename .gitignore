@@ -1,0 +1,152 @@
+# Créé par le plugin de support .ignore (hsz.mobi)
+### Modèle Python
+# Fichiers compilés / optimisés / DLL
+__pycache __ /
+* .py [morue]
+* $ py.class
+
+# Extensions C
+*.alors
+
+# Distribution / emballage
+.Python
+env /
+construire/
+développer des oeufs /
+dist /
+téléchargements /
+des œufs/
+.des œufs/
+lib /
+lib64 /
+les pièces/
+sdist /
+var /
+* .egg-info /
+.installed.cfg
+*.Oeuf
+
+# PyInstaller
+# Habituellement, ces fichiers sont écrits par un script python à partir d'un modèle
+# avant que PyInstaller ne construise l'exe, de manière à y injecter une date / d'autres informations.
+*.manifeste
+* .spec
+
+# Journaux du programme d'installation
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Rapports de test / couverture unitaire
+htmlcov /
+.tox /
+.couverture
+.couverture.*
+.cache
+nosetests.xml
+Coverage.xml
+*,couverture
+.hypothèse/
+
+# Traductions
+* .mo
+*.pot
+
+# Django trucs:
+*.Journal
+local_settings.py
+
+# Trucs de flacon:
+exemple/
+.webassets-cache
+
+# Trucs déchirés:
+.scrapy
+
+# Documentation Sphinx
+docs / _build /
+
+# PyBuilder
+cible/
+
+# Bloc-notes IPython
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# fichier de calendrier de battement de céleri
+céleri-calendrier
+
+# dotenv
+.env
+
+# virtualenv
+venv /
+ENV /
+
+# Paramètres du projet Spyder
+.spyderproject
+
+# Paramètres du projet de corde
+.ropeproject
+### Modèle VirtualEnv
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+.Python
+[Bb] dans
+[J'inclus
+[Ll] ib
+[Ll] ib64
+[Ll] ocal
+[Ss] cripts
+pyvenv.cfg
+.venv
+pip-selfcheck.json
+### Modèle JetBrains
+# Couvre les IDE JetBrains: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio et Webstorm
+# Référence: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# Trucs spécifiques à l'utilisateur:
+.idea / workspace.xml
+.idea / tasks.xml
+.idea / dictionnaires
+.idea / vcs.xml
+.idea / jsLibraryMappings.xml
+
+# Fichiers sensibles ou à taux de désabonnement élevé:
+.idea / dataSources.ids
+.idea / dataSources.xml
+.idea / dataSources.local.xml
+.idea / sqlDataSources.xml
+.idea / dynamic.xml
+.idea / uiDesigner.xml
+
+# Gradle:
+.idea / gradle.xml
+.idea / bibliothèques
+
+# Plugin Mongo Explorer:
+.idea / mongoSettings.xml
+
+.idée/
+
+## Format de projet basé sur un fichier:
+* .iws
+
+## Fichiers spécifiques au plugin:
+
+# IntelliJ
+/en dehors/
+
+Plugin # mpeltonen / sbt-idea
+.idea_modules /
+
+# Plugin JIRA
+atlassian-ide-plugin.xml
+
+# Plugin Crashlytics (pour Android Studio et IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
