@@ -2,8 +2,12 @@ import cv2
 import black_white
 import flou
 import dilate
+import os
 
+image_list = os.listdir("img")
 
-b = black_white.filtre_bw('img/harryPotter.jpg')
-f = flou.filtre_flou('img/joker.jpg')
-d = dilate.dilatation('img/jumanji.jpg')
+for img in image_list:
+    print(img)
+    black_white.filtre_bw("img/"+img)
+    dilate.dilatation("img/"+img)
+    flou.filtre_flou("img/"+img)
