@@ -1,10 +1,6 @@
 import cv2
+import black_white
 
-def print_hi(name):
-    print(f'Hi, {name}')
+#   black_white.filtre_bw(black_white)
 
-
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-image = cv2.imread('img/harryPotter.jpg')
+c = black_white.filtre_bw('img/harryPotter.jpg')
