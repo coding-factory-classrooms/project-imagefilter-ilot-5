@@ -16,13 +16,13 @@ def save(image, outputdir, image_name):
     try:
         os.mkdir(outputdir)
 
-    #si il y arrive pas à le créer
+    # si il n'y en a pas, on crée le directory
     except OSError:
-        print("Creation fail" + outputdir)
-
-    #alors on crée le directory
-    else:
         print("Creation " + outputdir)
+
+    # si il y arrive pas à le créer
+    else:
+        print("Creation fail " + outputdir)
 
 
 
