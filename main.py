@@ -8,6 +8,7 @@ import sys
 args = sys.argv
 
 for i in range (0, len(args)):
+    #récupère les dossier d'input et d'output
     if args[i] == "-i":
         input_folder = args[i + 1]
     if args[i] == "-o":
@@ -20,14 +21,12 @@ if not folder:
     fonctions.check_file_existence(output_folder)
 
 for f in image_list:
-    print(f)
-
-    #ouvre image
+    #ouvre image grace a une fonction
     img = fonctions.open("img/" + f)
 
     args = sys.argv
-    print(args)
     for i in range(0, len(args)):
+    #permet de choisir le filtre
         if args[i] == "dil":
             print("Filtre de dilatation ")
             img = dilate.dilatation(img)
@@ -40,8 +39,5 @@ for f in image_list:
             print("Filtre noir et blanc ")
             img = black_white.filtre_bw(img)
 
-        else:
-            print("Ce filtre n'existe pas")
-
-    #enregistre image modifiée
-    fonctions.save("test.jpg", img)
+    #enregistre image modifiée grace a une fonction
+        fonctions.save(f, img)
