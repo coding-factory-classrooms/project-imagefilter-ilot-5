@@ -11,21 +11,26 @@ def open(image_path):
     return image
 
 
-def save(image, outputdir, image_name):
+def check_file_existence(output_folder):
     #on esaye de créer le directory
     try:
-        os.mkdir(outputdir)
+        os.mkdir(output_folder)
 
     # si il n'y en a pas, on crée le directory
     except OSError:
-        print("Creation " + outputdir)
+        print("Creation " + output_folder)
 
     # si il y arrive pas à le créer
     else:
-        print("Creation fail " + outputdir)
+        print("Creation fail " + output_folder)
 
-
+def fichier(file_path):
+    f = os.path.exists(file_path)
+    return f
 
     # on enregistre l'image générée dans output/potter.jpg
     cv2.imwrite(outputdir + image_name, image)
+
+def save(nom, img):
+    cv2.imwrite("img_output/" + nom, img)
 

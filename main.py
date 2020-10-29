@@ -5,7 +5,19 @@ import os
 import fonctions
 import sys
 
-image_list = os.listdir("img")
+args = sys.argv
+
+for i in range (0, len(args)):
+    if args[i] == "-i":
+        input_folder = args[i + 1]
+    if args[i] == "-o":
+        output_folder = args[i + 1]
+
+folder = fonctions.fichier(output_folder)
+image_list = os.listdir(input_folder)
+
+if not folder:
+    fonctions.check_file_existence(output_folder)
 
 for f in image_list:
     print(f)
@@ -15,7 +27,7 @@ for f in image_list:
 
     args = sys.argv
     print(args)
-    for i in range(1, len(args)):
+    for i in range(0, len(args)):
         if args[i] == "dil":
             print("Filtre de dilatation ")
             img = dilate.dilatation(img)
@@ -32,4 +44,4 @@ for f in image_list:
             print("Ce filtre n'existe pas")
 
     #enregistre image modifiée
-    fonctions.save(img, "output/", f)
+    fonctions.save("test.jpg", img)
