@@ -19,10 +19,18 @@ try:
 #permet de continuer a faire tourner le programme meme si il y a une erreur
     folder = fonctions.fichier(output_folder)
     image_list = os.listdir(input_folder)
-except NameError:
-    print("Entrer un paramètre")
-    sys.exit(1)
+except NameError:   #si il n'y a rien rentrer en paramètre alors affichage des consignes
+    print(" ")
+    print("EXEMPLE: -o output -i img bw \n"
+    "-o output = fichier de stokage image modifiée \n"
+    "-i img = fichier image non modifiée\n")
 
+    print("--list-filters\n"
+    "bw = filtre noir et blanc\n"
+    "dil = filtre dilatation\n"
+    "flou = filtre flou\n")
+
+    sys.exit(1)
 
 if not folder:
     fonctions.check_file_existence(output_folder)
