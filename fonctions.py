@@ -11,6 +11,7 @@ for i in range(0, len(args)):
     if args[i] == "-o":
         output_folder = args[i + 1]
 
+
 def open(image_path):
     """
     Ouvre image

@@ -13,6 +13,8 @@ for i in range (0, len(args)):
         input_folder = args[i + 1]
     if args[i] == "-o":
         output_folder = args[i + 1]
+
+
 try:
 #permet de continuer a faire tourner le programme meme si il y a une erreur
     folder = fonctions.fichier(output_folder)
@@ -21,8 +23,10 @@ except NameError:
     print("Entrer un paramètre")
     sys.exit(1)
 
+
 if not folder:
     fonctions.check_file_existence(output_folder)
+
 
 for f in image_list:
     #ouvre image grace a une fonction
